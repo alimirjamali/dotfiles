@@ -1,7 +1,7 @@
 " My personalized vimrc file.
 "
 " Maintainer:	Ali Mirjamali <ali.mirjamali@gmail.com>
-" Last change: 2017 Jan 16
+" Last change: 2021 Dec 01
 "
 " This is an extension of the default vimrc example file.
 " My tweaks are added right at the bottom.
@@ -145,4 +145,11 @@ augroup programming
 	autocmd FileType ruby,sh,python call RunFromVim()
 augroup END
 
+" My own custom config - Ali Mirjamali
+set termbidi				" Bidirectional text support
+set colorcolumn=80,132			" Red color column 80 & 132
+set textwidth=132			" Automatically break lines at 132 column
+set backspace=indent,eol,start		" Mimic backspace like other editors
+highlight ColorColumn ctermbg=darkgrey guibg=darkslategrey
+set showmatch				"highlights matching brackets on cursor hover
 
